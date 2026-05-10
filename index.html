@@ -111,9 +111,11 @@
   .hero-grid{display:grid;grid-template-columns:1fr 320px;gap:5rem;align-items:end}
   .hero-kicker{font-family:var(--mono);font-size:0.74rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--oxblood);margin-bottom:1.25rem;display:flex;align-items:center;gap:0.75rem}
   .hero-kicker::before{content:'';width:32px;height:1px;background:var(--oxblood)}
-  .hero-name{font-family:var(--serif);font-size:clamp(3.5rem,8vw,6.6rem);font-weight:500;line-height:1;letter-spacing:-0.02em;margin-bottom:0.35em;max-width:10ch}
-  .hero-degree{font-size:0.4em;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:var(--oxblood);white-space:nowrap}
-  .hero-education{font-family:var(--sans);font-size:0.95rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-bottom:1.75rem;max-width:48rem}
+  .hero-name{font-family:var(--serif);font-size:clamp(2.8rem,6vw,5.4rem);font-weight:500;line-height:1;letter-spacing:-0.03em;margin-bottom:0.55em;white-space:nowrap}
+  .hero-credentials{display:flex;flex-direction:column;gap:0.55rem;margin-bottom:1.75rem;max-width:54rem}
+  .hero-credential{display:grid;grid-template-columns:64px 1fr;gap:0.85rem;align-items:start;font-family:var(--sans);font-size:0.97rem;line-height:1.45;color:var(--muted)}
+  .cred-label{font-family:var(--mono);font-size:0.68rem;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--oxblood);padding-top:0.25rem}
+  .cred-value{font-weight:500;color:var(--ink-soft)}
   .hero-rule{width:100%;height:1px;background:var(--ink);margin:2rem 0 1.5rem;transform-origin:left;animation:ruleIn 1.2s cubic-bezier(0.65,0,0.35,1) 0.3s both}
   @keyframes ruleIn{from{transform:scaleX(0)}to{transform:scaleX(1)}}
   .hero-tagline{display:flex;flex-wrap:wrap;align-items:baseline;gap:0.75em 1.5em;font-family:var(--serif);font-size:1.35rem;font-style:italic;color:var(--ink-soft);margin-bottom:2rem;line-height:1.4}
@@ -289,8 +291,9 @@
     .hero-grid{grid-template-columns:1fr;gap:2rem}
     .hero-aside{display:flex;width:min(100%,320px);margin:0 auto;gap:1rem}
     .portrait{aspect-ratio:4/5}
-    .hero-name{font-size:clamp(2.8rem,12vw,4.5rem);max-width:12ch}
-    .hero-education{font-size:0.82rem;letter-spacing:0.06em}
+    .hero-name{font-size:clamp(1.6rem,7vw,3rem)}
+    .hero-credential{grid-template-columns:52px 1fr;gap:0.7rem;font-size:0.9rem}
+    .cred-label{font-size:0.62rem}
     .hero-bio{font-size:1.15rem}.hero-bio::first-letter{font-size:3.5rem}
     .hero-tagline{font-size:1.15rem}
     section{padding:4.5rem 0}
@@ -323,8 +326,12 @@
     <div class="hero-grid">
       <div>
         <div class="hero-kicker">About</div>
-        <h1 class="hero-name">Kofi Ampoma Asuako <span class="hero-degree">(PhD)</span></h1>
-        <p class="hero-education">Ph.D. in Economics, Southern Illinois University Carbondale</p>
+        <h1 class="hero-name">Kofi Ampoma Asuako</h1>
+        <div class="hero-credentials">
+          <p class="hero-credential"><span class="cred-label">PhD</span><span class="cred-value">Ph.D. in Economics, Southern Illinois University Carbondale</span></p>
+          <p class="hero-credential"><span class="cred-label">MA</span><span class="cred-value">M.A. in Economics, Eastern Illinois University</span></p>
+          <p class="hero-credential"><span class="cred-label">BA</span><span class="cred-value">B.A. in Economics, Minor in History, Kwame Nkrumah University of Science and Technology (KNUST)</span></p>
+        </div>
         <div class="hero-rule"></div>
         <div class="hero-tagline">
           <span class="role">Ph.D. Economist</span>
