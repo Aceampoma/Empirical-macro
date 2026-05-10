@@ -109,6 +109,7 @@
   /* HERO */
   .hero{position:relative;padding:11rem 0 7rem;overflow:hidden}
   .hero-grid{display:grid;grid-template-columns:1fr 320px;gap:5rem;align-items:end}
+  .hero-main{min-width:0}
   .hero-kicker{font-family:var(--mono);font-size:0.74rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--oxblood);margin-bottom:1.25rem;display:flex;align-items:center;gap:0.75rem}
   .hero-kicker::before{content:'';width:32px;height:1px;background:var(--oxblood)}
   .hero-name{font-family:var(--serif);font-size:clamp(2.8rem,6vw,5.4rem);font-weight:500;line-height:1;letter-spacing:-0.03em;margin-bottom:0.55em;white-space:nowrap}
@@ -289,7 +290,14 @@
   @media (max-width:700px){
     .nav-links{display:none}.nav-mark{font-size:1.1rem}
     .hero-grid{grid-template-columns:1fr;gap:2rem}
-    .hero-aside{display:flex;width:min(100%,320px);margin:0 auto;gap:1rem}
+    .hero-main{display:contents}
+    .hero-intro{order:1}
+    .hero-aside{display:flex;width:min(100%,320px);margin:0;gap:1rem;order:2}
+    .hero-credentials{order:3}
+    .hero-rule{order:4}
+    .hero-tagline{order:5}
+    .hero-bio{order:6}
+    .hero-actions{order:7}
     .portrait{aspect-ratio:4/5}
     .hero-name{font-size:clamp(1.6rem,7vw,3rem)}
     .hero-credential{grid-template-columns:52px 1fr;gap:0.7rem;font-size:0.9rem}
@@ -325,9 +333,11 @@
 <section class="hero" id="top">
   <div class="container">
     <div class="hero-grid">
-      <div>
-        <div class="hero-kicker">About</div>
-        <h1 class="hero-name">Kofi Ampoma Asuako</h1>
+      <div class="hero-main">
+        <div class="hero-intro">
+          <div class="hero-kicker">About</div>
+          <h1 class="hero-name">Kofi Ampoma Asuako</h1>
+        </div>
         <div class="hero-credentials">
           <p class="hero-credential"><span class="cred-label">PhD</span><span class="cred-value">Ph.D. in Economics, Southern Illinois University Carbondale</span></p>
           <p class="hero-credential"><span class="cred-label">MA</span><span class="cred-value">M.A. in Economics, Eastern Illinois University</span></p>
