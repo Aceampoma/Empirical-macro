@@ -153,6 +153,7 @@
   /* RESEARCH */
   .research{background:var(--paper-warm);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
   .research-grid{display:grid;grid-template-columns:5fr 7fr;gap:4rem;align-items:start}
+  .research-grid.single{grid-template-columns:1fr}
   .interests-block h3,.papers-block h3,.diss-card h3{font-family:var(--mono);font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);margin-bottom:1.5rem;padding-bottom:0.75rem;border-bottom:1px solid var(--rule)}
   .interests-list{list-style:none;display:flex;flex-direction:column;counter-reset:item}
   .interests-list li{font-family:var(--serif);font-size:1.3rem;line-height:1.4;padding:0.85rem 0;border-bottom:1px dashed var(--rule-soft);display:flex;align-items:baseline;gap:1rem;transition:color 0.3s,transform 0.3s;cursor:default}
@@ -365,9 +366,9 @@
         <div class="section-num">§ I — Research</div>
         <h2 class="section-title"><em>Research</em> &amp; Publications</h2>
       </div>
-      <p class="section-lede">Current areas of inquiry, working papers, and publication record.</p>
+      <p class="section-lede">Research areas, publication record, and current working papers.</p>
     </header>
-    <div class="research-grid">
+    <div class="research-grid single">
       <div class="interests-block reveal">
         <h3>Areas of Inquiry</h3>
         <ol class="interests-list">
@@ -379,16 +380,6 @@
           <li>Sovereign debt sustainability</li>
           <li>Macroprudential regulation</li>
         </ol>
-      </div>
-      <div class="reveal">
-        <div class="papers-block">
-          <h3>Working Papers</h3>
-          <ol class="papers-list">
-            <li class="paper-row"><div class="paper-content"><div class="paper-title">Structural Drivers of Sovereign Lending Bias</div><div class="paper-sub">Why banks lend more to governments than to the private sector in frontier African economies.</div></div><span class="paper-status">In Progress</span></li>
-            <li class="paper-row"><div class="paper-content"><div class="paper-title">Do Inflation Surprises Undermine Banking-Sector Stability?</div><div class="paper-sub">Empirical evidence from Ghana.</div></div><span class="paper-status">Working Draft</span></li>
-            <li class="paper-row"><div class="paper-content"><div class="paper-title">Macroprudential Policy &amp; Credit Cycles</div></div><span class="paper-status">In Progress</span></li>
-          </ol>
-        </div>
       </div>
     </div>
     <div id="publications" class="research-record">
@@ -423,6 +414,16 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="research-record reveal">
+      <div class="papers-block">
+        <h3>Working Papers</h3>
+        <ol class="papers-list">
+          <li class="paper-row"><div class="paper-content"><div class="paper-title">Structural Drivers of Sovereign Lending Bias</div><div class="paper-sub">Why banks lend more to governments than to the private sector in frontier African economies.</div></div><span class="paper-status">In Progress</span></li>
+          <li class="paper-row"><div class="paper-content"><div class="paper-title">Do Inflation Surprises Undermine Banking-Sector Stability?</div><div class="paper-sub">Empirical evidence from Ghana.</div></div><span class="paper-status">Working Draft</span></li>
+          <li class="paper-row"><div class="paper-content"><div class="paper-title">Macroprudential Policy &amp; Credit Cycles</div></div><span class="paper-status">In Progress</span></li>
+        </ol>
       </div>
     </div>
   </div>
