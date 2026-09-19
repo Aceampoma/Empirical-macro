@@ -258,7 +258,21 @@
   .blog-cta{display:inline-flex;align-items:center;gap:0.5rem;font-family:var(--mono);font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink);border-bottom:1px solid rgba(26,24,22,0.3);padding-bottom:0.25rem;transition:color 0.3s,border-color 0.3s}
   .blog-cta:hover{color:var(--oxblood);border-color:var(--oxblood)}
   .blog-cta svg{width:12px;height:12px}
+  .blog-post{position:relative;background:var(--paper);border:1px solid var(--rule);max-width:900px;margin:0 auto;padding:4.5rem clamp(1.5rem,4vw,4rem)}
+  .blog-post::before{content:'';position:absolute;top:-1px;left:-1px;width:28px;height:28px;border-top:2px solid var(--oxblood);border-left:2px solid var(--oxblood)}
+  .blog-post::after{content:'';position:absolute;bottom:-1px;right:-1px;width:28px;height:28px;border-bottom:2px solid var(--oxblood);border-right:2px solid var(--oxblood)}
+  .blog-meta{font-family:var(--mono);font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--oxblood);margin-bottom:1.25rem}
+  .blog-title{font-family:var(--serif);font-size:clamp(2.1rem,5vw,3.9rem);font-weight:500;line-height:1;margin-bottom:1.75rem;max-width:12ch}
+  .blog-title em{font-style:italic;color:var(--oxblood)}
+  .blog-dek{font-family:var(--serif);font-size:1.35rem;font-style:italic;line-height:1.45;color:var(--muted);max-width:58ch;margin-bottom:3rem;padding-bottom:2rem;border-bottom:1px solid var(--rule)}
+  .blog-body{max-width:70ch}
+  .blog-body p{font-family:var(--serif);font-size:1.13rem;line-height:1.75;color:var(--ink-soft);margin-bottom:1.15rem}
+  .blog-body strong{color:var(--ink);font-weight:600}
+  .blog-questions{margin:2rem 0;padding:1.5rem 1.75rem;border-left:3px solid var(--oxblood);background:var(--paper-warm)}
+  .blog-questions p{font-family:var(--serif);font-size:1.25rem;line-height:1.45;color:var(--ink);margin-bottom:0.8rem}
+  .blog-questions p:last-child{margin-bottom:0}
   @media (max-width:700px){.blog-empty{padding:3rem 1.5rem}.blog-empty h3{font-size:1.65rem}}
+  @media (max-width:700px){.blog-post{padding:3rem 1.35rem}.blog-dek{font-size:1.15rem}.blog-body p{font-size:1.02rem;line-height:1.68}.blog-questions{padding:1.25rem}}
 
   /* CONTACT */
   .contact{background:var(--ink);color:var(--paper);border-top:1px solid var(--ink-soft)}
@@ -541,24 +555,39 @@
       </div>
       <p class="section-lede">Occasional essays, working notes, and shorter pieces on macro-financial questions — written between papers.</p>
     </header>
-    <div class="reveal">
-      <div class="blog-empty">
-        <svg class="blog-glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M14 50 L50 14"/>
-          <path d="M44 8 L56 20 L50 26 L38 14 Z"/>
-          <path d="M14 50 L8 56"/>
-          <circle cx="14" cy="50" r="2" fill="currentColor"/>
-        </svg>
-        <p class="blog-eyebrow">In Preparation</p>
-        <h3>The first <em>essay</em> is being drafted.</h3>
-        <p class="blurb">Posts will appear here as they are written. Until then, please consult the working papers and dissertation listed above.</p>
-        <div class="blog-divider"></div>
-        <a href="#contact" class="blog-cta">
-          Notify me when published
-          <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-        </a>
+    <article class="blog-post reveal">
+      <p class="blog-meta">Policy Note · Fiscal Finance &amp; Banking Fragility</p>
+      <h3 class="blog-title">When Fiscal Deficits Become <em>Banking Problems</em></h3>
+      <p class="blog-dek">How money-financed government deficits can move beyond inflation and eventually weaken the banking system.</p>
+      <div class="blog-body">
+        <p>Suppose a government is short of money.</p>
+        <p>It can raise taxes, borrow, cut spending, or finance part of the deficit by <strong>printing money</strong>.</p>
+        <p>At first, printing money can look attractive. The government gets the resources it needs, spending continues, and economic activity may even receive a short-run boost.</p>
+        <p>But that is only the first part of the story.</p>
+        <p>If too much money is printed relative to the economy's capacity to produce goods and services, inflation can rise and the exchange rate can come under pressure. Those pressures then begin to affect households and firms. Purchasing power falls, production costs rise, and some borrowers become less able to service their debts.</p>
+        <p>That is when the problem reaches the banks.</p>
+        <p>Banks do not operate separately from the rest of the economy. Their strength depends partly on the financial health of the households and firms they lend to. If borrowers become weaker, loan losses can rise. At the same time, inflation and broader macroeconomic instability can increase banks' own funding costs and put additional pressure on their balance sheets.</p>
+        <p>This is the central question in my paper, <strong>&ldquo;Money-Financed Government Deficits and Bank Fragility in Frontier Economies,&rdquo;</strong> forthcoming in the <strong>African Review of Economics &amp; Finance, 2026 issue</strong>.</p>
+        <p>The main argument is simple: <strong>the consequences of printing money to finance government deficits do not stop with inflation. They can pass through borrowers and eventually weaken the banking system itself.</strong></p>
+        <p>And once banks become weaker, they respond.</p>
+        <p>They become more cautious. They tighten lending standards, reduce the amount of credit they provide, and may charge more for the credit that remains available.</p>
+        <p>Now the original fiscal policy begins to work against itself.</p>
+        <p>The government initially increases spending to support economic activity. But if the way that spending is financed eventually causes banks to restrict credit, businesses may find it harder to finance investment and households may find it harder to borrow.</p>
+        <p>So the economy can experience two opposing forces at the same time: <strong>more government spending on one side and less private credit on the other.</strong></p>
+        <p>That is the tension at the heart of the paper.</p>
+        <p>In simple terms, <strong>the government may support demand today while weakening an important source of private investment tomorrow.</strong></p>
+        <p>This issue is particularly important in frontier economies, where banks remain the main source of external finance for many firms and households. When bank lending contracts, there may be few alternative sources of financing to take its place.</p>
+        <p>This is why the discussion about fiscal deficits should not end with the size of the deficit.</p>
+        <div class="blog-questions">
+          <p><strong>How is the deficit being financed?</strong></p>
+          <p><strong>What does that financing choice eventually do to borrowers, banks, credit, and investment?</strong></p>
+        </div>
+        <p>The broader lesson is that <strong>a fiscal problem can become a banking problem</strong>.</p>
+        <p>Once that happens, the consequences are no longer confined to government finances or inflation. They can appear as weaker banks, tighter credit, lower private investment, and slower economic growth.</p>
+        <p>The policy challenge, therefore, is not simply how governments can finance spending.</p>
+        <p>It is how they can meet legitimate financing and development needs <strong>without weakening the financial system that the private economy depends on.</strong></p>
       </div>
-    </div>
+    </article>
   </div>
 </section>
 
