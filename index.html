@@ -229,9 +229,9 @@
   .diss-link{display:inline-flex;align-items:center;gap:0.5rem;font-family:var(--mono);font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--oxblood);border-bottom:1px solid currentColor;padding-bottom:2px;transition:color 0.3s}
   .diss-link:hover{color:var(--ink)}
   .diss-link svg{width:12px;height:12px}
-  .paper-download,.blog-download{display:inline-flex;align-items:center;gap:0.55rem;font-family:var(--mono);font-size:0.7rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--oxblood);border:1px solid rgba(139,30,30,0.35);padding:0.75rem 1rem;margin-top:1.25rem;transition:background 0.3s,color 0.3s,border-color 0.3s}
-  .paper-download:hover,.blog-download:hover{background:var(--oxblood);border-color:var(--oxblood);color:var(--paper)}
-  .paper-download svg,.blog-download svg{width:13px;height:13px}
+  .inline-pdf{display:inline-flex;align-items:center;gap:0.35rem;vertical-align:middle;font-family:var(--mono);font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--oxblood);border:1px solid rgba(139,30,30,0.35);padding:0.32rem 0.48rem;margin-left:0.45rem;transform:translateY(-0.12rem);transition:background 0.3s,color 0.3s,border-color 0.3s}
+  .inline-pdf:hover{background:var(--oxblood);border-color:var(--oxblood);color:var(--paper)}
+  .inline-pdf svg{width:11px;height:11px}
 
   /* SKILLS */
   .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
@@ -268,7 +268,7 @@
   .blog-title{font-family:var(--serif);font-size:clamp(2.1rem,5vw,3.9rem);font-weight:500;line-height:1;margin-bottom:1.75rem;max-width:12ch}
   .blog-title em{font-style:italic;color:var(--oxblood)}
   .blog-dek{font-family:var(--serif);font-size:1.35rem;font-style:italic;line-height:1.45;color:var(--muted);max-width:58ch;margin-bottom:3rem;padding-bottom:2rem;border-bottom:1px solid var(--rule)}
-  .blog-download{margin-top:-1rem;margin-bottom:3rem}
+  .blog-pdf{font-size:0.62rem;margin-left:0.55rem;transform:translateY(-0.28rem)}
   .blog-body{max-width:70ch}
   .blog-body p{font-family:var(--serif);font-size:1.13rem;line-height:1.75;color:var(--ink-soft);margin-bottom:1.15rem}
   .blog-body strong{color:var(--ink);font-weight:600}
@@ -440,10 +440,9 @@
             <span class="pub-badge">Forthcoming</span>
           </div>
           <div>
-            <h3>Money-Financed Government Deficits and Bank Fragility in Frontier Economies</h3>
+            <h3>Money-Financed Government Deficits and Bank Fragility in Frontier Economies <a href="money-financed-government-deficits-bank-fragility.pdf" download class="inline-pdf" aria-label="Download PDF of Money-Financed Government Deficits and Bank Fragility in Frontier Economies">PDF <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg></a></h3>
             <p class="journal">African Review of Economics &amp; Finance</p>
             <p class="note">Forthcoming in <em>African Review of Economics &amp; Finance</em>.</p>
-            <a href="money-financed-government-deficits-bank-fragility.pdf" download class="paper-download">Download Paper <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg></a>
           </div>
         </article>
         <div class="diss-section reveal">
@@ -562,9 +561,8 @@
     </header>
     <article class="blog-post reveal">
       <p class="blog-meta">Policy Note · Fiscal Finance &amp; Banking Fragility</p>
-      <h3 class="blog-title">When Fiscal Deficits Become <em>Banking Problems</em></h3>
+      <h3 class="blog-title">When Fiscal Deficits Become <em>Banking Problems</em> <a href="money-financed-government-deficits-bank-fragility.pdf" download class="inline-pdf blog-pdf" aria-label="Download the full paper PDF">PDF <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg></a></h3>
       <p class="blog-dek">How money-financed government deficits can move beyond inflation and eventually weaken the banking system.</p>
-      <a href="money-financed-government-deficits-bank-fragility.pdf" download class="blog-download">Download Full Paper <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg></a>
       <div class="blog-body">
         <p>Suppose a government is short of money.</p>
         <p>It can raise taxes, borrow, cut spending, or finance part of the deficit by <strong>printing money</strong>.</p>
