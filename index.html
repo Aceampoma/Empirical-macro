@@ -395,7 +395,7 @@
       <aside class="hero-aside">
         <div class="portrait">
           <div class="portrait-frame"></div>
-          <img src="assets/kofi-portrait-upper-body.webp" alt="Kofi Ampoma Asuako"/>
+          <img src="assets/kofi-portrait-upper-body-no-banner.webp" alt="Kofi Ampoma Asuako"/>
         </div>
         <div class="quick-facts">
           <div class="fact"><span class="fact-key">Position</span><span class="fact-val">Asst. Prof. <em>of Economics</em></span></div>
@@ -647,8 +647,21 @@
     });
   }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
   document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+  // Count a read once a visitor reaches the middle of the article.
+  const blogReadMarker = document.querySelector('#blog .blog-body p:nth-of-type(6)');
+  if (blogReadMarker && typeof gtag === 'function') {
+    const blogReadObserver = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        gtag('event', 'blog_read', {
+          blog_title: 'When Fiscal Deficits Become Banking Problems'
+        });
+        blogReadObserver.disconnect();
+      }
+    }, { threshold: 0.5 });
+    blogReadObserver.observe(blogReadMarker);
+  }
 </script>
 
 </body>
 </html>
-
