@@ -197,6 +197,14 @@
   .research-record{margin-top:4rem;padding-top:3rem;border-top:1px solid var(--rule)}
 
   /* TEACHING */
+  .research-fields{margin-bottom:4rem}
+  .research-fields h3{font-family:var(--mono);font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);margin-bottom:1.25rem;padding-bottom:0.75rem;border-bottom:1px solid var(--rule)}
+  .research-fields-inline{display:flex;flex-wrap:wrap;gap:0.35rem 0.7rem;font-family:var(--serif);font-size:1.2rem;line-height:1.55;color:var(--ink-soft);max-width:70rem}
+  .research-fields-inline b{font-weight:400;color:var(--gold)}
+  .pub-feature.single-column{grid-template-columns:1fr}
+  .paper-row.no-status{grid-template-columns:60px 1fr}
+
+
   .teaching-stack{display:flex;flex-direction:column}
   .teach-row{display:grid;grid-template-columns:1fr 2fr;gap:4rem;padding:3rem 0;border-bottom:1px solid var(--rule);align-items:start}
   .teach-row:first-child{border-top:1px solid var(--rule)}
@@ -421,42 +429,41 @@
       </div>
       <p class="section-lede">Published research and current working papers.</p>
     </header>
-    <div class="research-grid single">
-      <div class="interests-block reveal">
-        <h3>Research Areas</h3>
-        <ol class="interests-list">
-          <li>Business cycles</li>
-          <li>Macro–financial linkages</li>
-          <li>Financial intermediation &amp; crises</li>
-          <li>Systemic risk &amp; banking resilience</li>
-          <li>Monetary–fiscal interactions</li>
-          <li>Sovereign debt sustainability</li>
-          <li>Macroprudential regulation</li>
-        </ol>
-      </div>
+
+    <div class="research-fields reveal">
+      <h3>Research Fields</h3>
+      <p class="research-fields-inline">
+        <span>Business cycles</span><b aria-hidden="true">·</b>
+        <span>Macro-financial linkages</span><b aria-hidden="true">·</b>
+        <span>Financial intermediation &amp; crises</span><b aria-hidden="true">·</b>
+        <span>Systemic risk &amp; banking resilience</span><b aria-hidden="true">·</b>
+        <span>Monetary-fiscal interactions</span><b aria-hidden="true">·</b>
+        <span>Sovereign debt sustainability</span><b aria-hidden="true">·</b>
+        <span>Macroprudential regulation</span>
+      </p>
     </div>
+
     <div id="publications" class="research-record">
       <div class="papers-block reveal">
         <h3>Publications</h3>
       </div>
       <div class="pub-stack">
-        <article class="pub-feature reveal">
-          <div class="badge-col">
-            
-          </div>
+        <article class="pub-feature single-column reveal">
           <div>
-            <h3>Money-Financed Government Deficits and Bank Fragility in Frontier Economies </h3>
-            <p class="journal">African Review of Economics &amp; Finance</p>
-            <p class="note">Kofi Ampoma Asuako (2026). <em>African Review of Economics &amp; Finance</em>, 18(1), 28–69. <a href="money-financed-government-deficits-bank-fragility.pdf" download class="inline-pdf" aria-label="Download PDF of Money-Financed Government Deficits and Bank Fragility in Frontier Economies">PDF <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg></a></p>
+            <h3>Money-Financed Government Deficits and Bank Fragility in Frontier Economies</h3>
+            <p class="note"><em>Kofi Ampoma Asuako (2026). African Review of Economics &amp; Finance, 18(1), 28–69.</em> <a href="money-financed-government-deficits-bank-fragility.pdf" download class="inline-pdf" aria-label="Download PDF of Money-Financed Government Deficits and Bank Fragility in Frontier Economies">PDF <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg></a></p>
           </div>
         </article>
+      </div>
+    </div>
+
     <div class="research-record reveal">
       <div class="papers-block">
         <h3>Working Papers</h3>
         <ol class="papers-list">
-          <li class="paper-row"><div class="paper-content"><div class="paper-title">Structural Lending Bias: Credit Market Frictions or Financial Repression?</div></div><span class="paper-status">Working Paper</span></li>
-          <li class="paper-row"><div class="paper-content"><div class="paper-title">Do Inflation Surprises Undermine Banking Sector Stability? Empirical Evidence from Ghana.</div></div><span class="paper-status">Working Paper</span></li>
-          <li class="paper-row"><div class="paper-content"><div class="paper-title">Macroprudential Policy and Credit Cycles in Emerging Markets.</div></div><span class="paper-status">Working Paper</span></li>
+          <li class="paper-row no-status"><div class="paper-content"><div class="paper-title">Structural Lending Bias: Credit Market Frictions or Financial Repression?</div></div></li>
+          <li class="paper-row no-status"><div class="paper-content"><div class="paper-title">Do Inflation Surprises Undermine Banking Sector Stability? Empirical Evidence from Ghana.</div></div></li>
+          <li class="paper-row no-status"><div class="paper-content"><div class="paper-title">Macroprudential Policy and Credit Cycles in Emerging Markets.</div></div></li>
         </ol>
       </div>
     </div>
